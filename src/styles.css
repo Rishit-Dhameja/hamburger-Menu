@@ -1,0 +1,113 @@
+/* App.css */
+/* App.css */
+.App {
+  padding-top: 60px; /* This should match the header height */
+  background: linear-gradient(to right, #e0eafc, #cfdef3); /* Light gradient background */
+  min-height: 100vh; /* Ensure it covers the entire viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+/* Tile View CSS */
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+/* Tile and Grid View CSS */
+.tile-container,
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.tile-item,
+.grid-item {
+  border: 1px solid #ccc; /* Light grey border */
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tile-item:hover,
+.grid-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.tile-item h3,
+.grid-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.tile-item p,
+.grid-item p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.tile-container .tile {
+  background-color: #f8f9fa; /* Light background color for tiles */
+  border: 1px solid #dee2e6; /* Light border */
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle 3D effect */
+  transition: transform 0.2s;
+}
+
+.tile-container .tile:hover {
+  transform: scale(1.05); /* Slightly enlarge the tile on hover */
+}
+
+/* Header.css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  z-index: 1000;
+}
+
+.horizontal-menu ul li {
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* ExpandedView.css */
+.expanded-view {
+  background-color: #f8f9fa; /* Matching light background color */
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); /* Subtle background gradient */
+}
+
+.expanded-view h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.expanded-view p {
+  color: #666;
+  line-height: 1.6;
+}

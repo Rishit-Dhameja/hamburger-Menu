@@ -1,0 +1,25 @@
+/* src/components/GridView.css */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .grid-item-content {
+    display: flex;
+    flex-direction: column;
+  }
+  

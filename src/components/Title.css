@@ -1,0 +1,53 @@
+.title-actions button {
+  background-color: #007bff; /* Primary blue color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px 12px; /* Padding around the text */
+  margin: 5px 2px; /* Spacing between buttons */
+  font-size: 14px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect */
+.title-actions button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Button focus outline */
+.title-actions button:focus {
+  outline: 2px solid #0056b3; /* Blue outline when focused */
+}
+
+/* Add border to buttons */
+.title-actions button {
+  border: 1px solid #007bff; /* Blue border */
+}
+
+/* Additional styles for specific actions */
+.title-actions button.edit {
+  background-color: #28a745; /* Green color for edit */
+}
+
+.title-actions button.edit:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.title-actions button.flag {
+  background-color: #ffc107; /* Yellow color for flag */
+  color: #212529; /* Dark text for visibility */
+}
+
+.title-actions button.flag:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+}
+
+.title-actions button.delete {
+  background-color: #dc3545; /* Red color for delete */
+}
+
+.title-actions button.delete:hover {
+  background-color: #c82333; /* Darker red on hover */
+}

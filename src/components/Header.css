@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed; /* Keep header at the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.horizontal-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.horizontal-menu li {
+  margin-right: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.horizontal-menu li:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin-top: 60px; /* Add margin to avoid content hiding under header */
+}
